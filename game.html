@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+        
+        <body background="assets/images/triangles.jpg">
+<head>
+    <title>John Hughes Trivia</title>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+</head> 
+<body onload="setTimer()">
+    <div><header></header></div>
+    <br>
+    <br>
+    <br>
+    <div class="container-fluid wrappergame">
+        <div class = "row">
+        <div id = "timer"></div>
+    </div>
+        <br>
+        <br>
+            <div class="row">
+                    <p id = "question1">1. True or false? John Hughes is the writer of "Home Alone," but not the director.</p>
+            </div>
+            <div class="row"> 
+                <button id ="ques1true" type="button" class="btn btn-primary true">True</button>
+                <button id ="ques1false" type="button" class="btn btn-danger false">False</button>
+            </div>
+            <br>
+                <div class="row">
+                    <p id = "question2">2. True or false? Most of John Hughes' movies are set in and around Chicago.</p>
+                </div>
+                <div class="row"> 
+                    <button id = "ques2true" type="button" class="btn btn-primary true">True</button>
+                    <button id = "ques2false" type="button" class="btn btn-danger false">False</button>
+                </div>
+                <br>
+                <div class="row">
+                    <p id = "question3">3. In "Ferris Bueller's Day Off" (directed by John Hughes), Cameron destroys his father's car after a day out in the city. What kind of car was it?</p>
+                </div>
+                <div class="row"> 
+                    <button id = "carquestionporsche" type="button" class="btn btn-success true" >Porsche</button>
+                    <button id = "carquestionferrari" type="button" class="btn btn-success false">Ferrari</button>
+                    <button id = "carquestionBMW" type="button" class="btn btn-success false">BMW</button>
+                    <button id = "carquestionmercedes" type="button" class="btn btn-success false">Mercedes</button>
+                </div>
+                <br> 
+                <div class="row">
+                    <p id = "question3">4 . True or False? Charlie Sheen has a role in "The Breakfast Club," one of John Hughes' most popular movies.</p>
+                </div>
+                <div class="row"> 
+                    <button id = "ques3true" type="button" class="btn btn-primary true" >True</button>
+                    <button id = "ques3false" type="button" class="btn btn-danger false">False</button>
+                </div>
+                <br>
+                <div class="row">
+                    <p id = "question4">5. Molly Ringwald, star of "Sixteen Candles" (directed by John Hughes), was actually 16 years old when the movie was released.</p>
+                </div>
+                <div class="row"> 
+                        <button id = "ques4true" type="button" class="btn btn-primary true" >True</button>
+                        <button id = "ques4false" type="button" class="btn btn-danger false">False</button>
+                    </div>
+                <br>
+                <div class="row">
+                    <p id = "question5">6. John Hughes directed "Pretty in Pink."</p>
+                </div>
+                <div class="row"> 
+                        <button id = "ques5true" type="button" class="btn btn-primary true" >True</button>
+                        <button id = "ques5false" type="button" class="btn btn-danger false">False</button>
+                    </div>
+                <br>
+                <div class="row">
+                    <p id = "question7">7. John Hughes started out as a writer for which magazine?</p>
+                </div>
+                <div class="row"> 
+                    <button id = "magquestionpeople" type="button" class="btn btn-success true" >People</button>
+                    <button id = "magquestiontime" type="button" class="btn btn-success false">Time</button>
+                    <button id = "magquestionnationallampoon" type="button" class="btn btn-success false">National Lampoon</button>
+                    <button id = "magquestionmad" type="button" class="btn btn-success false">Mad</button>
+                </div>
+                <br> 
+                <div class="row">
+                    <p id = "question8">8. "Uncle Buck" was the last movie John Hughes ever directed.</p>
+                </div>
+                <div class="row"> 
+                        <button id = "ques6true" type="button" class="btn btn-primary true" >True</button>
+                        <button id = "ques6false" type="button" class="btn btn-danger false">False</button>
+                    </div>
+                <br>
+                <div class="row">
+                    <p id = "question7">9. Which of these movies directed by John Hughes is NOT also the name of a song?</p>
+                </div>
+                <div class="row"> 
+                    <button id = "songquestionsixteencandles" type="button" class="btn btn-success multiplechoice" >Sixteen Candles</button>
+                    <button id = "songquestionprettyinpink" type="button" class="btn btn-success multiplechoice">Pretty in Pink</button>
+                    <button id = "songquestionbaby" type="button" class="btn btn-success multiplechoice">She's Having a Baby</button>
+                    <button id = "songquestioncurlysue" type="button" class="btn btn-success multiplechoice">Curly Sue</button>
+                </div>
+                <br> 
+                <div class="row">
+                    <p id = "question7">10. Anthony Michael Hall first worked with John Hughes during the filming of "National Lampoon's Vacation."</p>
+                </div>
+                <div class="row"> 
+                        <button id = "ques7true" type="button" class="btn btn-primary true" >True</button>
+                        <button id = "ques7false" type="button" class="btn btn-danger false">False</button>
+                    </div>
+                    <br>
+                <div class="row">
+                    <p id = "question8">11. John Hughes was nominated for an Academy Award in 1986 for his work on "The Breakfast Club."</p>
+                </div>
+                <div class="row"> 
+                        <button id = "ques8true" type="button" class="btn btn-primary true" >True</button>
+                        <button id = "ques8false" type="button" class="btn btn-danger false">False</button>
+                </div>
+                <br>
+                <div class="row">
+                    <p id = "question7">12. John Candy had a role in how many films that John Hughes wrote?</p>
+                </div>
+                <div class="row"> 
+                    <button id = "johncandyquestionfive" type="button" class="btn btn-success multiplechoice" >Five</button>
+                    <button id = "johncandyquestionthree" type="button" class="btn btn-success multiplechoice">Three</button>
+                    <button id = "johncandyquestioneight" type="button" class="btn btn-success multiplechoice">Eight</button>
+                    <button id = "johncandyquestiontwo" type="button" class="btn btn-success multiplechoice">Two</button>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                        <button id = "submitbutton" type="button" class="btn btn-primary" onclick="showResults()">See your results!</button>
+                    </div>
+                  </div>
+            </div>
+            </div>
+      </div>
+</body>
+<style>
+.wrapper{
+    width: 960px;
+    height: 350px;
+    top: 500px;
+    background-color: #5bc9ff;
+    margin-bottom: 100px;
+    padding: 20px;
+    clear: both;
+    overflow: hidden;
+    border-style: solid 300px;
+    border-color: black;
+    
+    
+}
+
+.wrappergame{
+    width: 960px;
+    height: 1900px;
+    top: 500px;
+    background-color: #5bc9ff;
+    margin-bottom: 100px;
+    padding: 20px;
+    clear: both;
+    overflow: hidden;
+    border-style: solid 300px;
+    border-color: black;
+    
+    
+}
+
+#timer {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    padding-left: 250px;
+    text-decoration: underline;
+
+}
+
+.h1 {
+    color: white;
+    font-family: fantasy;
+    font-size: 60px;
+    padding-left: 115px;
+    float: left;
+}
+
+.homeimage {
+    float: left;
+}
+
+.startbutton {
+    margin-left: 400px;
+    margin-top: 75px;
+    color: 5bc9ff;
+}
+
+hr {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+
+}
+
+#question1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    padding-left: 75px;
+}
+
+#question2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    padding-left: 75px;
+}
+
+#question3 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    padding-left: 75px;
+}
+
+#question4 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    padding-left: 75px;
+}
+
+#question5 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    padding-left: 75px;
+}
+
+#question6 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    padding-left: 75px;
+}
+
+#question7 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    padding-left: 75px;
+}
+
+#question8 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    padding-left: 75px;
+}
+
+#question1answer {
+    padding-left: 300px;
+}
+
+.true {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+.false {
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.multiplechoice {
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+#submitbutton {
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin-left: 340px;
+}
+
+#ques1true {
+
+}
+
+#ques1false {
+
+}
+
+#ques2true {
+
+}
+
+#ques2false {
+
+}
+
+#ques3true {
+
+}
+
+#ques3false {
+
+}
+</style>
+<script>
+
+</script>
+
+</html>

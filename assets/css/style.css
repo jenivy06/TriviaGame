@@ -1,0 +1,13 @@
+.wrapper{
+    width: 1100px;
+    height: 525px;
+    background-color: tan;
+    margin-bottom: 100px;
+    padding: 20px;
+    clear: both;
+    overflow: hidden;
+    border-style: solid 300px;
+    border-color: black;
+    
+    
+}
