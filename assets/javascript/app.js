@@ -14,6 +14,7 @@
             if (timeRemaining === 0) {
               clearInterval(timer);
               alert("Times up!");
+              $("#submitbutton").hide();
             }
           }, 1000)
           
