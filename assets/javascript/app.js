@@ -372,7 +372,12 @@
               //function showResults (){
               //  window.open("https://jenivy06.github.io/triviagame/results.html"); 
               //}
-              alert("Thanks for playing! Here are your results. Correct: " + correct + " Incorrect: " + incorrect);
+              //alert("Thanks for playing! Here are your results. Correct: " + correct + " Incorrect: " + incorrect);
+              
+                $("#submitbutton").click(function(showResults){
+                window.open("results.html");
+                $("#correct").text("Correct: " + correct);
+              })
               
              // function showResults (){
             //    document.getElementById("#correct").innerHTML = "Correct: " + correct;
